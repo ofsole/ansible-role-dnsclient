@@ -1,0 +1,19 @@
+# This file is being maintained by Ansible.
+# DO NOT EDIT
+{% if search %}
+search {% for name in search %}{{name}} {% endfor %}
+{% endif %}
+{% if sortlist %}
+sortlist {% for name in sortlist %}{{name}} {% endfor %}
+{% endif %}
+{% if domain and search is none %}
+domain {{doamin}}
+{% endif %}
+
+{% if options  %}
+options {% for name in options %}{{name}} {% endfor %}
+{% endif %}
+
+{% for nameserver in nameservers %}
+nameserver {{nameserver}}
+{% endfor %}

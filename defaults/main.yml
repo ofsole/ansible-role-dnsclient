@@ -1,0 +1,15 @@
+---
+# defaults file for ansible-role-dnsclient
+nameservers:
+  - 8.8.8.8
+  - 8.8.4.4
+options:
+  - rotate
+  - timeout:1
+search: []
+domain: ""
+sortlist: []
+resolver_config_file: /etc/resolv.conf
+resolver_config_file_owner: root
+resolver_config_file_group: root
+resolver_config_file_mode: 0644
