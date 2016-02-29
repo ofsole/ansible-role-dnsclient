@@ -1,9 +1,9 @@
-Role Name
+ansible-role-dnsclient
 =========
 
 [![Build Status](https://travis-ci.org/ofsole/ansible-role-dnsclient.png?branch=master)](https://travis-ci.org/ofsole/ansible-role-dnsclient)
 
-A brief description of the role goes here.
+This module manages /etc/resolv.conf file and its various options
 
 Requirements
 ------------
