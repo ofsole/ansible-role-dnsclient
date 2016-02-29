@@ -8,12 +8,12 @@ This module manages /etc/resolv.conf file and its various options
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+none.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+nameservers, options, search, domain, sortlist, resolver_config_file, resolver_config_file_owner, resolver_config_file_group, resolver_config_file_group could be customized in dnsclient role
 
 Dependencies
 ------------
@@ -27,7 +27,14 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - role: dnsclient
+           nameservers:
+             - 147.128.74.79
+             - 147.128.68.204
+             - 8.8.8.8
+           search:
+             - google.cn
+             - google.com
 
 License
 -------
@@ -37,4 +44,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Elvis Cai
