@@ -1,6 +1,8 @@
 Role Name
 =========
 
+[![Build Status](https://travis-ci.org/ofsole/ansible-role-dnsclient.png?branch=master)](https://travis-ci.org/ofsole/ansible-role-dnsclient)
+
 A brief description of the role goes here.
 
 Requirements
