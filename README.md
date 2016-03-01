@@ -24,8 +24,7 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - role: ansible-role-dnsclient
            nameservers:
-             - 147.128.74.79
-             - 147.128.68.204
+             - 8.8.4.4
              - 8.8.8.8
            search:
              - google.cn
