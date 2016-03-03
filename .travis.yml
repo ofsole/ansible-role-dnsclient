@@ -11,7 +11,6 @@ install:
 script:
   - ansible-playbook --syntax-check tests/test.yml
   - ansible-playbook --sudo -v --diff tests/test.yml
-  - ansible-playbook --sudo -v --diff tests/test.yml
   - >
     ansible-playbook --sudo tests/test.yml
     | grep -q 'changed=0.*failed=0'
