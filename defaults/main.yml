@@ -12,4 +12,4 @@ sortlist: []
 resolver_config_file: /etc/resolv.conf
 resolver_config_file_owner: root
 resolver_config_file_group: root
-resolver_config_file_mode: 644
+resolver_config_file_mode: '0644'
